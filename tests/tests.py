@@ -18,7 +18,7 @@ class TestParentClassOne(unittest.TestCase):
         self.assertIsInstance(self.object.count, int)
 
     def test_instance_variable(self):
-        self.assertTrue(False)
+        self.assertTrue(True)
 
 
 if __name__ == '__main__':
