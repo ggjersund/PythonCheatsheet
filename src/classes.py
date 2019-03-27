@@ -65,34 +65,37 @@ class ChildClass(ParentClassOne, ParentClassTwo):
 Test example classes
 """
 
-# Creating objects
-object1 = ParentClassOne()
-print(object1.count)
-object2 = ChildClass()
-print(object2.count)
+# Only run if file is being run directly
+if __name__ == "__main__":
 
-# Print instance variables
-print(object1.instance_variable)
-print(object2.instance_variable)
-print(object2.instance_variable_2)
+    # Creating objects
+    object1 = ParentClassOne()
+    print(object1.count)
+    object2 = ChildClass()
+    print(object2.count)
 
-# Change instance variable
-object1.instance_variable = "Instance variable changed 1"
-print(object1.instance_variable)
-print(object2.instance_variable)
+    # Print instance variables
+    print(object1.instance_variable)
+    print(object2.instance_variable)
+    print(object2.instance_variable_2)
 
-# Print count
-print(object1.count)
-print(object2.count)
+    # Change instance variable
+    object1.instance_variable = "Instance variable changed 1"
+    print(object1.instance_variable)
+    print(object2.instance_variable)
 
-# Delete object
-del object1
+    # Print count
+    print(object1.count)
+    print(object2.count)
 
-# Print count
-print(object2.count)
+    # Delete object
+    del object1
 
-# Print representation
-print(object2)
+    # Print count
+    print(object2.count)
 
-# Print static method
-print(object2.static_test())
+    # Print representation
+    print(object2)
+
+    # Print static method
+    print(object2.static_test())
